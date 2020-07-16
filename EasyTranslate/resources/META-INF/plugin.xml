@@ -1,0 +1,31 @@
+<idea-plugin>
+  <id>1.0</id>
+  <name>EasyTranslate</name>
+  <version>v1.1</version>
+  <vendor email="476935030@qq.com" url="http://www.gingost.cn">Gingostblood</vendor>
+
+  <description>This is a easy translate util to help u to learn English :)</description>
+
+  <change-notes>The author is very lazy so thar there is nothing</change-notes>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="EasyTranslateUtil" class="main.EasyTranslateAction" text="EasyTranslate"
+            description="BAI_DU_API_EasyTranslate">
+      <add-to-group group-id="EditMenu" anchor="first"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt 0"/>
+    </action>
+  </actions>
+
+</idea-plugin>
